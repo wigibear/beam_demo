@@ -30,5 +30,3 @@ with beam.Pipeline() as pipeline:
    
    output = ride_counts | 'Format count' >> beam.Map(format_trips)
    output | WriteToText("output.csv")
-  
-  
